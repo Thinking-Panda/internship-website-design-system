@@ -6,10 +6,13 @@
 $color-white: #ffffff;
 $color-black: #263238;
 $color-light-grey:#F8F9FC;
+$color-grey: #9F9F9F;
+$color-mid-grey: #6F6F6F;
 $color-dark-grey: #989898;
 $color-black: #333333;
 $color-green: #247984;
 $color-darkgreen: #0D5761;
+$color-red: #b00020;
 /// Font family
 $text-font-stack: (
   'Roboto',  
@@ -34,11 +37,16 @@ $radio-hovercolor: $color-darkgreen;
 $radio-disabled: #c6c6c6;
 $radio-button-width: 26px;
 
-$dropdown-hover-color: #CFE1E4;
 $dropdown-select-color: #A0C4C9;
-$dropdown-placeholder-color: $color-dark-grey;
-$drowpdown-border-color: $color-dark-grey;
+$dropdown-placeholder-color: $color-mid-grey;
+$dropdown-border-color: $color-mid-grey;
+$dropdown-hover-color: $color-dark-grey;
 $dropdown-arrow-color: $color-dark-grey;
+$dropdown-disabled-color: $color-grey;
+$dropdown-border-radius: 4px;
+$dropdown-focus-color: $color-green;
+$dropdown-error-color: $color-red;
+
 
 $tab-text-color: $color-darkgreen;
 $tab-underline-color: $color-darkgreen;

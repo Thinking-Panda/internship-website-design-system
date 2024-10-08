@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  mkdocs:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+      - /app/node_modules # Persist node_modules for faster subsequent builds
+    command: sh -c "npm run build-css && npm run dev"

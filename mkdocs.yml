@@ -15,6 +15,7 @@ nav:
 plugins:
   - search:
       lang: en
+  - extra-sass
 
 theme:
   name: material

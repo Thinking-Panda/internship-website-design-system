@@ -9,13 +9,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky",
-    "pa11y": "node scripts/pa11y-test.js"
+    "pa11y": "node scripts/pa11y-test.js",
+    "build-css": "sass extra_sass/main.scss docs/components/sass/main.css",
+    
+    "sass:watch": "sass --watch extra_sass/main.scss:docs/components/sass/main.css",
+  "mkdocs:serve": "mkdocs serve",
+   "dev": "concurrently \"extra_sass/main.scss:docs/components/sass/main.css\" \"mkdocs serve --dev-addr=0.0.0.0:8000\""
   },
   "author": "hackforla",
   "license": "GPL-2.0",
   "devDependencies": {
+    "concurrently": "^8.2.2",
     "csv-writer": "^1.6.0",
     "husky": "^9.0.11",
-    "pa11y": "^8.0.0"
+    "pa11y": "^8.0.0",
+    "sass": "^1.77.8"
   }
 }

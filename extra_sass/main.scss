@@ -1,0 +1,19 @@
+@import
+  '../docs/components/sass/abstract/_variable.scss';
+
+@import
+  '../docs/components/sass/base/typography',
+  '../docs/components/sass/base/reset',
+  '../docs/components/sass/layout/tabs';
+
+@import
+'../docs/components/sass/components/buttons',
+'../docs/components/sass/components/radio',
+'../docs/components/sass/components/input-fields',
+'../docs/components/sass/components/text-area',
+'../docs/components/sass/components/type-scale',
+  '../docs/components/sass/components/dropdowns';
+
+@import
+  '../docs/components/sass/layout/grid',
+  '../docs/components/sass/layout/tabs';
